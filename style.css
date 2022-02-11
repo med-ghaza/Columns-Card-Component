@@ -1,0 +1,108 @@
+/* Start Variables  */
+
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* Neutral */
+
+  --white-paragraphs: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+/* End Variables  */
+
+/* Start Component */
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  background-color: var(--Very-light-gray);
+}
+
+/* End Component */
+
+/* Start Columns  */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin: 100px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+    .container {
+        margin: 50px 15px;
+    }
+}
+
+.container .box {
+  padding: 50px;
+}
+
+.container .one {
+  background-color: var(--Bright-orange);
+}
+
+.container .two {
+  background-color: var(--Dark-cyan);
+}
+
+.container .three {
+  background-color: var(--Very-dark-cyan);
+}
+
+.container .box h1 {
+    font-family: "Big Shoulders Display", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--Very-light-gray);
+}
+
+.container .box p {
+    font-size: 15px;
+    color: var(--white-paragraphs);
+    line-height: 26px;
+    margin-bottom: 80px;
+}
+
+.container .box button {
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container .box button:hover {
+    color: white;
+    border: 1px solid var(--Very-light-gray);
+}
+
+.container .one button {
+    color: var(--Bright-orange);
+}
+
+.container .one button:hover {
+    background-color: var(--Bright-orange);
+}
+
+.container .two button {
+    color: var(--Dark-cyan);
+}
+
+.container .two button:hover {
+    background-color: var(--Dark-cyan);
+}
+
+.container .three button {
+    color: var(--Very-dark-cyan);
+}
+
+.container .three button:hover {
+    background-color: var(--Very-dark-cyan);
+}
+
+/* End Columns  */
